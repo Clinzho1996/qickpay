@@ -50,9 +50,7 @@ function ForgotPassword() {
         <div className="mt-4 ml-2">
           <p className="text-[14px] text-[#1E2B3B] font-semibold">
             Didn&apos;t receive code?{" "}
-            <Link href="/login" className="text-[#F55425] font-semibold">
-              Resend OTP
-            </Link>
+            <button className="text-[#F55425] font-semibold">Resend OTP</button>
           </p>
         </div>
       </div>
