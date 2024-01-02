@@ -7,6 +7,9 @@ function Home() {
   return (
     <div>
       <Navbar />
+      <div className="p-10 text-center">
+        <h2>Home Page</h2>
+      </div>
       <Footer />
     </div>
   );
