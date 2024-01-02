@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <div className="w-full flex flex-row justify-between items-center align-middle py-[2%] px-[6%]">
+    <div className="w-full flex flex-row justify-between items-center align-middle py-[1%] px-[6%]">
       <div className="w-full ">
         <Link href="/">
           <Image
@@ -17,12 +17,16 @@ function Navbar() {
         </Link>
       </div>
       <div className="flex flex-row justify-end gap-5 w-[30%]">
-        <button className="border border-[#2B3674] font-bold px-10 p-3 rounded-full text-[#2B3674] hover:bg-[#2B3674] hover:text-white">
-          Login
-        </button>
-        <button className=" bg-[#2B3674] font-bold px-10 p-3 rounded-full text-white">
-          Sign Up
-        </button>
+        <Link href="/login">
+          <button className="border border-[#2B3674] font-bold px-10 p-3 rounded-full text-[#2B3674] hover:bg-[#2B3674] hover:text-white">
+            Login
+          </button>
+        </Link>
+        <Link href="/register">
+          <button className=" bg-[#2B3674] font-bold px-10 p-3 rounded-full text-white">
+            Sign Up
+          </button>
+        </Link>
       </div>
     </div>
   );
