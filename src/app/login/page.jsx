@@ -18,7 +18,7 @@ function Login() {
           <h2 className="text-[#1E2B3B] text-[18px] md:text-[24px] font-bold">
             Sign In to access your dashboard
           </h2>
-          <p className="text-[16px] text-[#A3AED0] mt-2">
+          <p className="text-[14px] md:text-[16px] text-[#A3AED0] mt-2">
             Enter your email and password to sign in!
           </p>
           <button className="bg-[#F4F7FE] flex flex-row items-center gap-5 justify-center rounded-sm font-semibold mt-5 w-full p-3 capitalize">
@@ -60,7 +60,7 @@ function Login() {
           />
         </Box>
         <div className="flex flex-row justify-between items-center align-middle">
-          <div className="flex flex-row justify-start gap-2 items-center">
+          <div className="flex flex-row justify-start gap-0 items-center">
             <Checkbox />
             <p className="text-[14px] text-[#1E2B3B] font-semibold">
               keep me logged in

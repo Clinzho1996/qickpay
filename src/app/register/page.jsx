@@ -18,7 +18,7 @@ function Register() {
           <h2 className="text-[#1E2B3B] text-[18px] md:text-[24px] font-bold">
             Create your QickPay account
           </h2>
-          <p className="text-[16px] text-[#A3AED0] mt-2">
+          <p className="text-[14px] md:text-[16px] text-[#A3AED0] mt-2">
             Please provide the required details
           </p>
         </div>
@@ -84,7 +84,7 @@ function Register() {
           />
         </Box>
         <div className="flex flex-row justify-between items-center align-middle">
-          <div className="flex flex-row justify-start gap-1 items-center">
+          <div className="flex flex-row justify-start gap-0 items-center">
             <Checkbox />
             <p className="text-[14px] text-[#1E2B3B] font-semibold">
               I agree to qickpay&apos;s privacy policy
