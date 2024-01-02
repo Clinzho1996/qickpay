@@ -14,8 +14,8 @@ function Login() {
           <ArrowBack className="text-[#A3AED0] text-[14px]" />
           <p className="text-[#A3AED0] text-[14px]">Back to Homepage</p>
         </div>
-        <div className=" mt-20">
-          <h2 className="text-[#1E2B3B] text-[24px] font-bold">
+        <div className=" mt-10 md:20">
+          <h2 className="text-[#1E2B3B] text-[18px] md:text-[24px] font-bold">
             Sign In to access your dashboard
           </h2>
           <p className="text-[16px] text-[#A3AED0] mt-2">
