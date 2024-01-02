@@ -14,7 +14,7 @@ function Register() {
           <ArrowBack className="text-[#A3AED0] text-[14px]" />
           <p className="text-[#A3AED0] text-[14px]">Back to Homepage</p>
         </div>
-        <div className=" mt-20">
+        <div className=" mt-10">
           <h2 className="text-[#1E2B3B] text-[24px] font-bold">
             Create your QickPay account
           </h2>
@@ -84,7 +84,7 @@ function Register() {
           />
         </Box>
         <div className="flex flex-row justify-between items-center align-middle">
-          <div className="flex flex-row justify-start gap-2 items-center">
+          <div className="flex flex-row justify-start gap-1 items-center">
             <Checkbox />
             <p className="text-[14px] text-[#1E2B3B] font-semibold">
               I agree to qickpay&apos;s privacy policy
