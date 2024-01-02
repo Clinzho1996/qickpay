@@ -9,7 +9,7 @@ import Link from "next/link";
 function Register() {
   return (
     <div className="flex flex-row justify-between w-full my-5">
-      <div className="bg-white w-[100%] mx-0 px-[8%] md:w-[50%]">
+      <div className="bg-white w-[100%] px-[4%] md:px-[8%] md:w-[50%]">
         <div className="flex flex-row items-center justify-start gap-3">
           <ArrowBack className="text-[#A3AED0] text-[14px]" />
           <p className="text-[#A3AED0] text-[14px]">Back to Homepage</p>
