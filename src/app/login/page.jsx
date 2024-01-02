@@ -29,7 +29,7 @@ function Login() {
         <Box
           component="form"
           sx={{
-            "& > :not(style)": { m: 1, width: "100%" },
+            "& > :not(style)": { mt: 2, width: "100%" },
           }}
           autoComplete="off"
           className="mt-10"
@@ -73,7 +73,7 @@ function Login() {
             Forgot Password?
           </Link>
         </div>
-        <button className="bg-[#2B3674] w-full p-4 ml-2 mt-3 text-white rounded-md font-bold">
+        <button className="bg-[#2B3674] w-full p-4 mt-3 text-white rounded-md font-bold">
           Sign In
         </button>
         <div className="mt-4 ml-2">

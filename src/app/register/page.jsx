@@ -25,10 +25,10 @@ function Register() {
         <Box
           component="form"
           sx={{
-            "& > :not(style)": { m: 1, width: "100%" },
+            "& > :not(style)": { mt: 2, width: "100%" },
           }}
           autoComplete="off"
-          className="mt-10"
+          className="mt-5"
         >
           <p className="text-[14px] text-[#1E2B3B] font-semibold">Full Name*</p>
           <TextField
@@ -91,7 +91,7 @@ function Register() {
             </p>
           </div>
         </div>
-        <button className="bg-[#2B3674] w-full p-4 ml-2 mt-3 text-white rounded-md font-bold">
+        <button className="bg-[#2B3674] w-full p-4 mt-3 text-white rounded-md font-bold">
           Register
         </button>
         <div className="mt-4 ml-2">
