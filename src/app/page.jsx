@@ -17,6 +17,7 @@ import Waec from "../../public/payment.png";
 import { ArrowRightAltSharp } from "@mui/icons-material";
 import { Input } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 
 function Home() {
   return (
@@ -37,9 +38,11 @@ function Home() {
             <strong>Empower</strong> your <strong>Customers</strong> to pay you
             easily as you <strong>grow</strong>
           </h2>
-          <button className="bg-[#2B3674] text-white px-20 rounded-full py-4 mt-10">
-            Click to Sign Up <ArrowRightAltSharp />
-          </button>
+          <Link href="/register">
+            <button className="bg-[#2B3674] text-white px-20 rounded-full py-4 mt-10">
+              Click to Sign Up <ArrowRightAltSharp />
+            </button>
+          </Link>
         </div>
         <div className="flex flex-col w-[100%] pl-[0%] md:mt-0 mt-10 md:pl-[10%]">
           <div>
