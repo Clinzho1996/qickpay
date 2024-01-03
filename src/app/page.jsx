@@ -47,7 +47,7 @@ function Home() {
         <div className="flex flex-col w-[100%] pl-[0%] md:mt-0 mt-10 md:pl-[10%]">
           <div>
             <input
-              placeholder="search here for a biller"
+              placeholder="Search here for a biller"
               className="p-3 w-full rounded-full border border-gray-400 text-black text-[14px] text-center"
             />
           </div>
