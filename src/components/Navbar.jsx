@@ -27,9 +27,11 @@ function Navbar() {
           />
         </Link>
       </div>
-      <button onClick={handleMenuToggle}>
-        <BiMenuAltRight size={30} />
-      </button>
+      <div className="block md:hidden">
+        <button onClick={handleMenuToggle}>
+          <BiMenuAltRight size={30} />
+        </button>
+      </div>
       {mobileMenuOpen && (
         <div className="absolute top-12 right-6 mt-2 py-2 w-[200px] bg-white border rounded-lg z-10">
           <div
