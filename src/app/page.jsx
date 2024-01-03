@@ -38,7 +38,7 @@ function Home() {
             <strong>Empower</strong> your <strong>Customers</strong> to pay you
             easily as you <strong>grow</strong>
           </h2>
-          <Link href="/register">
+          <Link href="/register" className="flex justify-start">
             <button className="bg-[#2B3674] text-white px-20 rounded-full py-4 mt-10">
               Click to Sign Up <ArrowRightAltSharp />
             </button>
