@@ -197,33 +197,51 @@ function Home() {
           <div className="mt-5">
             <div className="flex flex-row justify-start gap-5 items-center">
               <div>
-                <Image src={ReferTwo} alt="refer" />
+                <Image
+                  src={ReferTwo}
+                  alt="refer"
+                  className="h-[60px] w-[60px] md:h-[70px] md:w-[70px] object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-black font-bold text-[18px]">
                   Refer your friends
                 </h3>
-                <p>Share your referral link with friends.</p>
+                <p className="text-gray text-[14px]">
+                  Share your referral link with friends.
+                </p>
               </div>
             </div>
             <div className="flex flex-row justify-start gap-5 items-center mt-4">
               <div>
-                <Image src={Register} alt="refer" />
+                <Image
+                  src={Register}
+                  alt="refer"
+                  className="h-[70px] w-[70px] object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-black font-bold text-[18px]">
                   Register your friends
                 </h3>
-                <p>Ensure they register their accounts on Qickpay</p>
+                <p className="text-gray text-[14px]">
+                  Ensure they register their accounts on Qickpay
+                </p>
               </div>
             </div>
             <div className="flex flex-row justify-start gap-5 items-center mt-4">
               <div>
-                <Image src={Earn} alt="refer" />
+                <Image
+                  src={Earn}
+                  alt="refer"
+                  className="h-[70px] w-[70px] object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-black font-bold text-[18px]">Start Earn</h3>
-                <p>You earn 10% on every payment they make</p>
+                <p className="text-gray text-[14px]">
+                  You earn 10% on every payment they make
+                </p>
               </div>
             </div>
           </div>
