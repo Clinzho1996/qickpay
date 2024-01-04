@@ -15,18 +15,22 @@ import Invoice from "../../public/invoice.png";
 import Debit from "../../public/credit-card.png";
 import Waec from "../../public/payment.png";
 import { ArrowRightAltSharp } from "@mui/icons-material";
-import { Input } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import Refer from "../../public/referthumb.png";
+import ReferTwo from "../../public/boxspeaker.png";
+import Register from "../../public/boxregister.png";
+import Earn from "../../public/boxamount.png";
 
 function Home() {
   return (
     <div>
       <Navbar />
+      {/* Hero Section */}
       <div
         className="p-10 flex flex-col md:flex-row justify-between items-center text-center mt-[-20%] md:mt-[-6%]"
         style={{
-          background: " url('/hero_img.png') lightgray",
+          background: " url('/hero_img.png')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           width: "100%",
@@ -171,6 +175,56 @@ function Home() {
               <p className="text-black text-center font-semibold text-[14px]">
                 Buy WAEC PIN
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Refer & Earn */}
+      <div className="flex flex-col md:flex-row justify-between items-center p-[6%] w-full">
+        <div className="w-[100%]">
+          <Image src={Refer} alt="refer" />
+        </div>
+        <div className="w-full">
+          <h2 className="text-black text-[42px] font-bold md:text-[53px] text-left leading-[53px]">
+            Refer & Earn
+          </h2>
+          <p className="text-gray text-[14px] mt-3">
+            Refer your friends and earn up to $20. There are many variations of
+            passages of Lorem Ipsum available, but the have suffered alteration
+            in some form, by injected humour, or randomised words which
+            don&apos;t look even slightly believable. If you are going to use...
+          </p>
+          <div className="mt-5">
+            <div className="flex flex-row justify-start gap-5 items-center">
+              <div>
+                <Image src={ReferTwo} alt="refer" />
+              </div>
+              <div>
+                <h3 className="text-black font-bold text-[18px]">
+                  Refer your friends
+                </h3>
+                <p>Share your referral link with friends.</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 items-center mt-4">
+              <div>
+                <Image src={Register} alt="refer" />
+              </div>
+              <div>
+                <h3 className="text-black font-bold text-[18px]">
+                  Register your friends
+                </h3>
+                <p>Ensure they register their accounts on Qickpay</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 items-center mt-4">
+              <div>
+                <Image src={Earn} alt="refer" />
+              </div>
+              <div>
+                <h3 className="text-black font-bold text-[18px]">Start Earn</h3>
+                <p>You earn 10% on every payment they make</p>
+              </div>
             </div>
           </div>
         </div>
