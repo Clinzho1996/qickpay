@@ -20,17 +20,16 @@ import Link from "next/link";
 import Works from "@/components/Works";
 import Refer from "@/components/Refer";
 import Hero from "@/components/Hero";
+import Testimonials from "@/components/Testimonials";
 
 function Home() {
   return (
     <div>
       <Navbar />
-      {/* Hero Section */}
       <Hero />
-      {/* Refer & Earn */}
       <Refer />
-      {/* Works */}
       <Works />
+      <Testimonials />
       <Footer />
     </div>
   );
