@@ -30,7 +30,7 @@ function Testimonials() {
       <h2 className="text-black text-[42px] text-center font-bold md:text-[53px] leading-[53px]">
         Client Testimonials
       </h2>
-      <p className="text-gray text-[14px] text-center mt-3">
+      <p className="text-gray text-[14px] md:text-[18px] text-center mt-3">
         There are many variations of passages of Lorem Ipsum available, but the
         <br className="md:block hidden" />
         majority have suffered alteration in some form
