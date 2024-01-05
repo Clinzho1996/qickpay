@@ -54,12 +54,12 @@ function Navbar() {
       )}
       <div className="md:flex flex-row justify-end gap-5 w-[100%] md:w-[35%] hidden">
         <Link href="/login">
-          <button className="border border-[#2B3674] font-bold px-7 p-3 md:px-10 md:text-[16px] text-[12px] rounded-full text-[#2B3674] hover:bg-[#2B3674] hover:text-white">
+          <button className="border border-[#2B3674] font-bold px-7 p-3 md:px-10 md:text-[16px] text-[12px] rounded-full text-[#2B3674] hover:bg-[#2B3674] hover:text-white hover:scale-110 transition-transform">
             Login
           </button>
         </Link>
         <Link href="/register">
-          <button className=" bg-[#2B3674] font-bold px-7 p-3 md:px-10 md:text-[16px] text-[12px] rounded-full text-white">
+          <button className=" bg-[#2B3674] font-bold px-7 p-3 md:px-10 md:text-[16px] text-[12px] rounded-full text-white hover:scale-110 transition-transform">
             Sign Up
           </button>
         </Link>
