@@ -1,28 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import Swiper from "react-id-swiper";
-import "swiper/css";
 import Brad from "../../public/brad.png";
 import Alena from "../../public/alena.png";
 import Jenlia from "../../public/jenlia.png";
 import Image from "next/image";
 import { Star } from "@mui/icons-material";
+import "swiper/css/swiper.css";
 
 function Testimonials() {
   const params = {
     pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
       clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
     },
     spaceBetween: 30,
     slidesPerView: 2,
     autoplay: {
-      delay: 3000, // Adjust delay in milliseconds as needed
-      disableOnInteraction: false, // Allows auto-scrolling even if the user interacts with the Swiper
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      440: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
     },
   };
   return (
@@ -37,7 +39,7 @@ function Testimonials() {
       </p>
       <div className="mt-10">
         <Swiper {...params}>
-          <div className="bg-white shadow-lg p-10 rounded-md">
+          <div className="bg-white shadow-lg p-10 rounded-md m-2">
             <div className="flex flex-row justify-center items-center gap-1">
               <Star className="text-[#FFB32B]" size={20} />
               <Star className="text-[#FFB32B]" size={20} />
@@ -66,7 +68,7 @@ function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="bg-white shadow-lg p-10 rounded-md">
+          <div className="bg-white shadow-lg p-10 rounded-md m-2">
             <div className="flex flex-row justify-center items-center gap-1">
               <Star className="text-[#FFB32B]" size={20} />
               <Star className="text-[#FFB32B]" size={20} />
@@ -95,7 +97,7 @@ function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="bg-white shadow-lg p-10 rounded-md">
+          <div className="bg-white shadow-lg p-10 rounded-md m-2">
             <div className="flex flex-row justify-center items-center gap-1">
               <Star className="text-[#FFB32B]" size={20} />
               <Star className="text-[#FFB32B]" size={20} />
