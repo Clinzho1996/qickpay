@@ -75,7 +75,7 @@ function Support() {
           </Link>
         </div>
       </div>
-      <div className="w-[100%]">
+      <div className="w-[100%] mt-10 md:mt-0">
         <Image src={SupportImg} alt="refer" />
       </div>
     </div>

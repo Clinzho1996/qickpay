@@ -11,7 +11,7 @@ function Refer() {
       <div className="w-[100%]">
         <Image src={ReferOne} alt="refer" />
       </div>
-      <div className="w-full">
+      <div className="w-full mt-10 md:mt-0">
         <h2 className="text-black text-[42px] font-bold md:text-[53px] text-left leading-[53px]">
           Refer & Earn
         </h2>
