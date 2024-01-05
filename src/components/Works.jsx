@@ -16,7 +16,7 @@ function Works() {
         majority have suffered alteration in some form
       </p>
       <div className="flex flex-col md:flex-row justify-center gap-5 items-center mt-5">
-        <div className="bg-white shadow-sm p-5 rounded-md">
+        <div className="bg-white shadow-sm p-5 rounded-md hover:scale-110 transition-transform hover:border hover:border-[#2B3674]">
           <div className="flex flex-row justify-between items-center">
             <Image src={Choose} alt="choose" />
             <h2 className="text-[#EBEBEB] text-[64px] italic font-bold">01</h2>
@@ -30,7 +30,7 @@ function Works() {
             humour
           </p>
         </div>
-        <div className="bg-white shadow-sm p-5 rounded-md">
+        <div className="bg-white shadow-sm p-5 rounded-md hover:scale-110 transition-transform hover:border hover:border-[#2B3674]">
           <div className="flex flex-row justify-between items-center">
             <Image src={Find} alt="choose" />
             <h2 className="text-[#EBEBEB] text-[64px] italic font-bold">02</h2>
@@ -44,7 +44,7 @@ function Works() {
             humour
           </p>
         </div>
-        <div className="bg-white shadow-sm p-5 rounded-md">
+        <div className="bg-white shadow-sm p-5 rounded-md hover:scale-110 transition-transform hover:border hover:border-[#2B3674]">
           <div className="flex flex-row justify-between items-center">
             <Image src={Code} alt="choose" />
             <h2 className="text-[#EBEBEB] text-[64px] italic font-bold">03</h2>
