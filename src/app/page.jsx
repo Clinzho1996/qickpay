@@ -21,6 +21,7 @@ import Works from "@/components/Works";
 import Refer from "@/components/Refer";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
+import Support from "@/components/Support";
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
       <Refer />
       <Works />
       <Testimonials />
+      <Support />
       <Footer />
     </div>
   );

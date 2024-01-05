@@ -19,14 +19,11 @@ function Testimonials() {
       disableOnInteraction: false,
     },
     breakpoints: {
-      400: {
+      540: {
         slidesPerView: 1,
       },
-      640: {
-        slidesPerView: 2,
-      },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
     },
   };
