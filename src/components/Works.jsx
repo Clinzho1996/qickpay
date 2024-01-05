@@ -7,7 +7,7 @@ import Image from "next/image";
 function Works() {
   return (
     <div className="bg-[#F4F5FC] p-[6%]">
-      <h2 className="text-black text-[42px] text-center font-bold md:text-[53px] leading-[53px]">
+      <h2 className="text-black text-[34px] text-center font-bold md:text-[53px] leading-[53px]">
         How It Works
       </h2>
       <p className="text-gray text-[14px] md:text-[18px] text-center mt-3">

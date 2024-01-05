@@ -11,7 +11,7 @@ function Support() {
   return (
     <div className="flex bg-[#F4F5FC] flex-col md:flex-row justify-between items-center p-[6%] w-full">
       <div className="w-full">
-        <h2 className="text-black text-[42px] font-bold md:text-[53px] text-left leading-[53px]">
+        <h2 className="text-black text-[34px] font-bold md:text-[53px] text-left leading-[53px]">
           Enjoy our special support
         </h2>
         <p className="text-gray text-[14px] mt-3">
