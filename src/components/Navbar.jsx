@@ -17,7 +17,7 @@ function Navbar() {
     setDropdownOpen(!dropdownOpen);
   };
   return (
-    <div className="w-full flex flex-row justify-between items-center align-middle py-[1%] px-[6%]">
+    <div className="w-full flex flex-row justify-between items-center align-middle py-[2%] md:py-[1%] px-[6%]">
       <div className="w-full ">
         <Link href="/">
           <Image
