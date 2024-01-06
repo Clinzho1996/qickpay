@@ -62,7 +62,7 @@ function Testimonials() {
               </div>
               <div>
                 <h3 className="text-black text-[16px] text-left font-bold md:text-[18px]">
-                  Brad Hogds
+                  Brad
                 </h3>
                 <p>Engineer</p>
               </div>
@@ -91,7 +91,7 @@ function Testimonials() {
               </div>
               <div>
                 <h3 className="text-black text-[16px] text-left font-bold md:text-[18px]">
-                  Jenlia d&apos;suza
+                  Jenlia
                 </h3>
                 <p>Student</p>
               </div>
@@ -120,7 +120,7 @@ function Testimonials() {
               </div>
               <div>
                 <h3 className="text-black text-[16px] text-left font-bold md:text-[18px]">
-                  Alena Hecals
+                  Alena
                 </h3>
                 <p>Doctor</p>
               </div>
