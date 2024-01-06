@@ -42,6 +42,9 @@ function Hero() {
   const [openState, setOpenState] = useState(false);
   const handleOpenState = () => setOpenState(true);
   const handleCloseState = () => setOpenState(false);
+  const [openBills, setOpenBills] = useState(false);
+  const handleOpenBills = () => setOpenBills(true);
+  const handleCloseBills = () => setOpenBills(false);
   return (
     <>
       {/* Airtime Popup */}
@@ -564,6 +567,56 @@ function Hero() {
           </div>
         </Box>
       </Modal>
+      {/* Bills Popup */}
+      <Modal
+        open={openBills}
+        onClose={handleCloseBills}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 bg-white w-[95%] md:w-[500px] rounded-md">
+          <div className="flex flex-row justify-between items-center">
+            <Typography
+              id="modal-modal-title"
+              className="text-[#2B3674] text-[12px] md:text-[18px] capitalize"
+              variant="h6"
+              component="h2"
+            >
+              Bills & Purchases
+            </Typography>
+            <CloseSharp
+              onClick={handleCloseBills}
+              sx={{ color: "gray", fontSize: 28, cursor: "pointer" }}
+            />
+          </div>
+          <div className="mt-5">
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Bills} alt="MTN" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">PAY BILLERS</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Invoice} alt="Glo" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">PAY RRR INVOICE</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Debit} alt="Airtel" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">MICRO PENSION</p>
+              </div>
+            </div>
+          </div>
+        </Box>
+      </Modal>
       <div
         className="p-10 flex flex-col md:flex-row justify-between items-center text-center mt-[-20%] md:mt-[-6%]"
         style={{
@@ -668,7 +721,10 @@ function Hero() {
                 Pay TSA & States
               </p>
             </div>
-            <div className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]">
+            <div
+              className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]"
+              onClick={handleOpenBills}
+            >
               <Image
                 src={Bills}
                 alt="airtime"
