@@ -22,18 +22,6 @@ import Gmobile from "../../public/9mobile.png";
 import Smile from "../../public/smile.png";
 import Tizeti from "../../public/tizeti.png";
 
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 500,
-  bgcolor: "background.paper",
-  boxShadow: 24,
-  borderRadius: 4,
-  p: 4,
-};
-
 function Hero() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -50,11 +38,11 @@ function Hero() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 bg-white w-[95%] md:w-[500px] md:mx-0 rounded-md">
           <div className="flex flex-row justify-between items-center">
             <Typography
               id="modal-modal-title"
-              className="text-[#2B3674] text-[18px] capitalize"
+              className="text-[#2B3674] text-[12px] md:text-[18px] capitalize"
               variant="h6"
               component="h2"
             >
@@ -108,11 +96,11 @@ function Hero() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 bg-white w-[95%] md:w-[500px] rounded-md">
           <div className="flex flex-row justify-between items-center">
             <Typography
               id="modal-modal-title"
-              className="text-[#2B3674] text-[18px] capitalize"
+              className="text-[#2B3674] text-[12px] md:text-[18px] capitalize"
               variant="h6"
               component="h2"
             >
