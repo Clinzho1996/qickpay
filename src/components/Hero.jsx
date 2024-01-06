@@ -623,7 +623,7 @@ function Hero() {
           </div>
         </Box>
       </Modal>
-      {/* FGN & States popup */}
+      {/* Tax popup */}
       <Modal
         open={openTax}
         onClose={handleCloseTax}
@@ -638,7 +638,7 @@ function Hero() {
               variant="h6"
               component="h2"
             >
-              Pay Tax
+              Pay Taxes
             </Typography>
             <CloseSharp
               onClick={handleCloseTax}
