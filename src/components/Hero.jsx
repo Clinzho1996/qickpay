@@ -22,6 +22,9 @@ import Gmobile from "../../public/9mobile.png";
 import Smile from "../../public/smile.png";
 import Tizeti from "../../public/tizeti.png";
 import Disco from "../../public/disco.svg";
+import Dstv from "../../public/dstvsub.png";
+import Gotv from "../../public/gotvsub.png";
+import Startimes from "../../public/startimessub.png";
 
 function Hero() {
   const [open, setOpen] = useState(false);
@@ -33,6 +36,9 @@ function Hero() {
   const [openElectricity, setOpenElectricity] = useState(false);
   const handleOpenElectricity = () => setOpenElectricity(true);
   const handleCloseElectricity = () => setOpenElectricity(false);
+  const [openCable, setOpenCable] = useState(false);
+  const handleOpenCable = () => setOpenCable(true);
+  const handleCloseCable = () => setOpenCable(false);
   return (
     <>
       {/* Airtime Popup */}
@@ -174,7 +180,7 @@ function Hero() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 bg-white w-[95%] md:w-[700px] rounded-md">
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 bg-white w-[95%] md:w-[700px] rounded-md h-[500px] overflow-y-auto">
           <div className="flex flex-row justify-between items-center">
             <Typography
               id="modal-modal-title"
@@ -226,6 +232,124 @@ function Hero() {
                 <p className="text-[18px] text-gray-500">
                   ENUGU ELECTRICITY DISTRIBUTION COMPANY (EEDC)
                 </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Disco" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">IKEJA ELECTRIC</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Disco" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  IBADAN ELECTRICITY DISTRIBUTION COMPANY (IBEDC)
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Disco" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  JOS ELECTRICITY DISTRIBUTION COMPANY
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Disco" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  KADUNA ELECTRICITY DISTRIBUTION COMPANY (KEDCO)
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Disco" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  KANO ELECTRICITY DISTRIBUTION COMPANY (KEDCO)
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Disco" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  PORT HARCOURT ELECTRICITY DISTRIBUTION COMPANY (PHED)
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Disco" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  RCCG ELECTRICAL POWER DEPARTMENT
+                </p>
+              </div>
+            </div>
+          </div>
+        </Box>
+      </Modal>
+      {/* Cable TV popup */}
+      <Modal
+        open={openCable}
+        onClose={handleCloseCable}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 bg-white w-[95%] md:w-[500px] rounded-md">
+          <div className="flex flex-row justify-between items-center">
+            <Typography
+              id="modal-modal-title"
+              className="text-[#2B3674] text-[12px] md:text-[18px] capitalize"
+              variant="h6"
+              component="h2"
+            >
+              Please select your CABLE provider
+            </Typography>
+            <CloseSharp
+              onClick={handleCloseCable}
+              sx={{ color: "gray", fontSize: 28, cursor: "pointer" }}
+            />
+          </div>
+          <div className="mt-5">
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Dstv} alt="DSTV" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">DSTV</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Gotv} alt="Gotv" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">GOTV</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Startimes} alt="Startimes" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">STARTIMES</p>
               </div>
             </div>
           </div>
@@ -299,7 +423,10 @@ function Hero() {
                 Buy Electricity
               </p>
             </div>
-            <div className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]">
+            <div
+              className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]"
+              onClick={handleOpenCable}
+            >
               <Image
                 src={Cable}
                 alt="airtime"
