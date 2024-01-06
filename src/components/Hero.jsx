@@ -38,7 +38,7 @@ function Hero() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-10 bg-white w-[95%] md:w-[500px] md:mx-0 rounded-md">
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 bg-white w-[95%] md:w-[500px] md:mx-0 rounded-md">
           <div className="flex flex-row justify-between items-center">
             <Typography
               id="modal-modal-title"
@@ -96,7 +96,7 @@ function Hero() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-10 bg-white w-[95%] md:w-[500px] rounded-md">
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 bg-white w-[95%] md:w-[500px] rounded-md">
           <div className="flex flex-row justify-between items-center">
             <Typography
               id="modal-modal-title"
