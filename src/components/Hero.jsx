@@ -21,6 +21,7 @@ import Airtel from "../../public/airtel.png";
 import Gmobile from "../../public/9mobile.png";
 import Smile from "../../public/smile.png";
 import Tizeti from "../../public/tizeti.png";
+import Disco from "../../public/disco.svg";
 
 function Hero() {
   const [open, setOpen] = useState(false);
@@ -29,6 +30,9 @@ function Hero() {
   const [openData, setOpenData] = useState(false);
   const handleOpenData = () => setOpenData(true);
   const handleCloseData = () => setOpenData(false);
+  const [openElectricity, setOpenElectricity] = useState(false);
+  const handleOpenElectricity = () => setOpenElectricity(true);
+  const handleCloseElectricity = () => setOpenElectricity(false);
   return (
     <>
       {/* Airtime Popup */}
@@ -163,6 +167,70 @@ function Hero() {
           </div>
         </Box>
       </Modal>
+      {/* Electricity Popup */}
+      <Modal
+        open={openElectricity}
+        onClose={handleCloseElectricity}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 bg-white w-[95%] md:w-[700px] rounded-md">
+          <div className="flex flex-row justify-between items-center">
+            <Typography
+              id="modal-modal-title"
+              className="text-[#2B3674] text-[12px] md:text-[18px] capitalize"
+              variant="h6"
+              component="h2"
+            >
+              Please select your DISCO provider
+            </Typography>
+            <CloseSharp
+              onClick={handleCloseElectricity}
+              sx={{ color: "gray", fontSize: 28, cursor: "pointer" }}
+            />
+          </div>
+          <div className="mt-5">
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Meter" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">BUY METER</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Abuja Elect" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  ABUJA ELECTRICITY DISTRIBUTION COMPANY (AEDC)
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Disco" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  EKO ELECTRICITY DISTRIBUTION PLC
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Disco} alt="Disco" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  ENUGU ELECTRICITY DISTRIBUTION COMPANY (EEDC)
+                </p>
+              </div>
+            </div>
+          </div>
+        </Box>
+      </Modal>
       <div
         className="p-10 flex flex-col md:flex-row justify-between items-center text-center mt-[-20%] md:mt-[-6%]"
         style={{
@@ -218,7 +286,10 @@ function Hero() {
                 Buy Data
               </p>
             </div>
-            <div className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]">
+            <div
+              className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]"
+              onClick={handleOpenElectricity}
+            >
               <Image
                 src={Electricity}
                 alt="airtime"
