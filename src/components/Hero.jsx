@@ -45,6 +45,12 @@ function Hero() {
   const [openBills, setOpenBills] = useState(false);
   const handleOpenBills = () => setOpenBills(true);
   const handleCloseBills = () => setOpenBills(false);
+  const [openTax, setOpenTax] = useState(false);
+  const handleOpenTax = () => setOpenTax(true);
+  const handleCloseTax = () => setOpenTax(false);
+  const [openSalary, setOpenSalary] = useState(false);
+  const handleOpenSalary = () => setOpenSalary(true);
+  const handleCloseSalary = () => setOpenSalary(false);
   return (
     <>
       {/* Airtime Popup */}
@@ -617,6 +623,350 @@ function Hero() {
           </div>
         </Box>
       </Modal>
+      {/* FGN & States popup */}
+      <Modal
+        open={openTax}
+        onClose={handleCloseTax}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 bg-white w-[95%] md:w-[500px] rounded-md h-[500px] overflow-y-auto">
+          <div className="flex flex-row justify-between items-center">
+            <Typography
+              id="modal-modal-title"
+              className="text-[#2B3674] text-[12px] md:text-[18px] capitalize"
+              variant="h6"
+              component="h2"
+            >
+              Pay Tax
+            </Typography>
+            <CloseSharp
+              onClick={handleCloseTax}
+              sx={{ color: "gray", fontSize: 28, cursor: "pointer" }}
+            />
+          </div>
+          <div className="mt-5">
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Abia State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Adamawa State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Akwaibom State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Anambra State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Bauchi State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Bayelsa State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Benue State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Borno State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Cross River State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Delta State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Ebonyi State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Edo State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Ekiti State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Enugu State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Federal Capital Territory Internal Revenue Service (FCTIRS)
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Federal Inland Revenue Service (FIRS)
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Gombe State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Imo State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Jigawa State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Kaduna State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Kano State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Katsina State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Kebbi State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Kogi State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Kwara State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Lagos State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Nassarawa State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Niger State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Ogun State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Ondo State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Osun State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Oyo State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Plateau State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Rivers State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Sokoto State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Taraba State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Yobe State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Zamfara State Internal Revenue Service
+                </p>
+              </div>
+            </div>
+          </div>
+        </Box>
+      </Modal>
+      {/* Salary popup */}
+      <Modal
+        open={openSalary}
+        onClose={handleCloseSalary}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 bg-white w-[95%] md:w-[500px] rounded-md">
+          <div className="flex flex-row justify-between items-center">
+            <Typography
+              id="modal-modal-title"
+              className="text-[#2B3674] text-[12px] md:text-[18px] capitalize"
+              variant="h6"
+              component="h2"
+            >
+              Pay Salaries & Satutories
+            </Typography>
+            <CloseSharp
+              onClick={handleCloseSalary}
+              sx={{ color: "gray", fontSize: 28, cursor: "pointer" }}
+            />
+          </div>
+          <div className="mt-5">
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Folder} alt="DSTV" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">Pay Salaries</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Folder} alt="Gotv" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  Upload Pension Schedule
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Folder} alt="Startimes" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">Upload NHF Schedule</p>
+              </div>
+            </div>
+          </div>
+        </Box>
+      </Modal>
       <div
         className="p-10 flex flex-col md:flex-row justify-between items-center text-center mt-[-20%] md:mt-[-6%]"
         style={{
@@ -734,7 +1084,10 @@ function Hero() {
                 Bills & Purchases
               </p>
             </div>
-            <div className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]">
+            <div
+              className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]"
+              onClick={handleOpenTax}
+            >
               <Image
                 src={Tax}
                 alt="airtime"
@@ -744,7 +1097,10 @@ function Hero() {
                 Pay Taxes
               </p>
             </div>
-            <div className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]">
+            <div
+              className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]"
+              onClick={handleOpenSalary}
+            >
               <Image
                 src={Folder}
                 alt="airtime"
