@@ -19,6 +19,8 @@ import Mtn from "../../public/mtn.png";
 import Glo from "../../public/glo.png";
 import Airtel from "../../public/airtel.png";
 import Gmobile from "../../public/9mobile.png";
+import Smile from "../../public/smile.png";
+import Tizeti from "../../public/tizeti.png";
 
 const style = {
   position: "absolute",
@@ -36,8 +38,12 @@ function Hero() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [openData, setOpenData] = useState(false);
+  const handleOpenData = () => setOpenData(true);
+  const handleCloseData = () => setOpenData(false);
   return (
     <>
+      {/* Airtime Popup */}
       <Modal
         open={open}
         onClose={handleClose}
@@ -95,6 +101,80 @@ function Hero() {
           </div>
         </Box>
       </Modal>
+      {/* Data popup */}
+      <Modal
+        open={openData}
+        onClose={handleCloseData}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <div className="flex flex-row justify-between items-center">
+            <Typography
+              id="modal-modal-title"
+              className="text-[#2B3674] text-[18px] capitalize"
+              variant="h6"
+              component="h2"
+            >
+              Please select your TELCO provider
+            </Typography>
+            <CloseSharp
+              onClick={handleCloseData}
+              sx={{ color: "gray", fontSize: 28, cursor: "pointer" }}
+            />
+          </div>
+          <div className="mt-5">
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Mtn} alt="MTN" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">MTN</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Glo} alt="Glo" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">GLO</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Airtel} alt="Airtel" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">AIRTEL</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Gmobile} alt="9mobile" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">gMOBILE</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Smile} alt="Smile" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">SMILE</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <Image src={Tizeti} alt="Tizeti" />
+              </div>
+              <div>
+                <p className="text-[18px] text-gray-500">TIZETI</p>
+              </div>
+            </div>
+          </div>
+        </Box>
+      </Modal>
       <div
         className="p-10 flex flex-col md:flex-row justify-between items-center text-center mt-[-20%] md:mt-[-6%]"
         style={{
@@ -137,7 +217,10 @@ function Hero() {
                 Buy Airtime
               </p>
             </div>
-            <div className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]">
+            <div
+              className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]"
+              onClick={handleOpenData}
+            >
               <Image
                 src={Data}
                 alt="airtime"
