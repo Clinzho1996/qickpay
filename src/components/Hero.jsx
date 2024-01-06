@@ -39,6 +39,9 @@ function Hero() {
   const [openCable, setOpenCable] = useState(false);
   const handleOpenCable = () => setOpenCable(true);
   const handleCloseCable = () => setOpenCable(false);
+  const [openState, setOpenState] = useState(false);
+  const handleOpenState = () => setOpenState(true);
+  const handleCloseState = () => setOpenState(false);
   return (
     <>
       {/* Airtime Popup */}
@@ -355,6 +358,212 @@ function Hero() {
           </div>
         </Box>
       </Modal>
+      {/* FGN & States popup */}
+      <Modal
+        open={openState}
+        onClose={handleCloseState}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 bg-white w-[95%] md:w-[500px] rounded-md h-[500px] overflow-y-auto">
+          <div className="flex flex-row justify-between items-center">
+            <Typography
+              id="modal-modal-title"
+              className="text-[#2B3674] text-[12px] md:text-[18px] capitalize"
+              variant="h6"
+              component="h2"
+            >
+              Pay FGN and State TSA
+            </Typography>
+            <CloseSharp
+              onClick={handleCloseState}
+              sx={{ color: "gray", fontSize: 28, cursor: "pointer" }}
+            />
+          </div>
+          <div className="mt-5">
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  FGN: Federal Government Of Nigeria
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  ADAMAWA STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  ANAMBRA STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  BAUCHI STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  BENUE STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  BORNO STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  DELTA STATE JUDICIARY
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  EKITI STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  ENUGU STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  FEDERAL CAPITAL TERRITORY ADMIN
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  GOMBE STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  IMO STATE INTERNAL REVENUE
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  JIGAWA STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  KADUNA STATE GOVERNMENT TSA
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  KANO STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  KOGI STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  KWARA STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  LAGOS STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  LAGOS STATE MODEL COLLEGES AND UPGRADED SCHOOLS
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  NASARAWA STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  NIGER STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">NNPC Limited (NNPC)</p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  PLATEAU STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  SOKOTO STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  YOBE STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start gap-5 border-gray-400 border rounded-md p-3 items-center cursor-pointer hover:bg-gray-100 mt-4">
+              <div>
+                <p className="text-[18px] text-gray-500">
+                  ZAMFARA STATE GOVERNMENT
+                </p>
+              </div>
+            </div>
+          </div>
+        </Box>
+      </Modal>
       <div
         className="p-10 flex flex-col md:flex-row justify-between items-center text-center mt-[-20%] md:mt-[-6%]"
         style={{
@@ -446,7 +655,10 @@ function Hero() {
                 Pay Water
               </p>
             </div>
-            <div className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]">
+            <div
+              className="align-middle flex flex-col justify-center gap-5 cursor-pointer items-center p-5 bg-white shadow-lg rounded-lg hover:scale-110 transition-transform w-[145px]"
+              onClick={handleOpenState}
+            >
               <Image
                 src={States}
                 alt="airtime"
