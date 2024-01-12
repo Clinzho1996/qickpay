@@ -8,10 +8,10 @@ import Link from "next/link";
 
 function Register() {
   return (
-    <div className="flex flex-row justify-between w-full my-5">
+    <div className="flex flex-row justify-between w-full h-screen items-center">
       <div className="bg-white w-[100%] px-[4%] md:px-[8%] md:w-[50%]">
         <Link href="/">
-          <Image src={Logo} alt="logo" className="h-20 object-contain" />
+          <Image src={Logo} alt="logo" className="h-10 object-contain" />
         </Link>
         <div className=" mt-10">
           <h2 className="text-[#1E2B3B] text-[18px] md:text-[24px] font-bold">
@@ -102,7 +102,7 @@ function Register() {
           </p>
         </div>
       </div>
-      <div className="bg-[#2B3674] w-[50%] rounded-s-md p-10 hidden md:block">
+      <div className="bg-[#2B3674] w-[50%] p-10 hidden md:block h-screen">
         <Image src={Bg} alt="bg" />
       </div>
     </div>

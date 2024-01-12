@@ -1,14 +1,45 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Bg from "../../../public/bg.png";
 import Google from "../../../public/google.png";
 import Logo from "../../../public/logo.png";
+import { signIn, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Box, Checkbox, TextField } from "@mui/material";
 import Link from "next/link";
+import { ToastContainer } from "react-toastify";
 
 function Login() {
+  const session = useSession();
+  const router = useRouter();
+
+  if (session.status === "loading") {
+    return (
+      <div className="flex flex-row flex-1 justify-center h-screen">
+        <Image src="/loader.svg" alt="loading" width={100} height={100} />
+      </div>
+    );
+  }
+
+  if (session.status === "authenticated") {
+    router?.push("/dashbaord");
+  }
+  const handleGoogleSignIn = async () => {
+    const result = await signIn("google");
+
+    // Check if the sign-in was successful before navigating
+    if (result?.error) {
+      console.error("Google Sign-In error:", result.error);
+    } else {
+      router?.push("/dashboard");
+      toast.success("Login Succesful!");
+    }
+  };
+
   return (
-    <div className="flex flex-row justify-between w-full my-5">
+    <div className="flex flex-row justify-between w-full h-screen items-center">
+      <ToastContainer />
       <div className="bg-white w-[100%] px-[4%] md:px-[8%] md:w-[50%]">
         <Link href="/">
           <Image src={Logo} alt="logo" className="h-20 object-contain" />
@@ -20,7 +51,10 @@ function Login() {
           <p className="text-[14px] md:text-[16px] text-[#A3AED0] mt-2">
             Enter your email and password to sign in!
           </p>
-          <button className="bg-[#F4F7FE] flex flex-row items-center gap-5 justify-center rounded-sm font-semibold mt-5 w-full p-3 capitalize">
+          <button
+            onClick={handleGoogleSignIn}
+            className="bg-[#F4F7FE] flex flex-row items-center gap-5 justify-center rounded-sm font-semibold mt-5 w-full p-3 capitalize"
+          >
             <Image src={Google} alt="google" className="w-6 h-6" />
             Sign in with Google
           </button>
@@ -84,7 +118,7 @@ function Login() {
           </p>
         </div>
       </div>
-      <div className="bg-[#2B3674] w-[50%] rounded-s-md p-10 hidden md:block">
+      <div className="bg-[#2B3674] w-[50%]  p-10 hidden md:block h-screen">
         <Image src={Bg} alt="bg" />
       </div>
     </div>
