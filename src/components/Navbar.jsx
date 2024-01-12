@@ -118,7 +118,7 @@ function Navbar() {
               <h2>{getNameInitials(session.user.name)}</h2>
             </div>
           )}
-          <h3>{session.user.name}</h3>
+          <h3>Hello, {session.user.name}</h3>
           <FiLogOut onClick={handleSignOut} size={25} />
         </div>
       ) : (
