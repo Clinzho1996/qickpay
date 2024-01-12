@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Box, Checkbox, TextField } from "@mui/material";
 import Link from "next/link";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 function Login() {
   const session = useSession();
@@ -23,7 +23,7 @@ function Login() {
   }
 
   if (session.status === "authenticated") {
-    router?.push("/dashbaord");
+    router?.push("/dashboard");
   }
   const handleGoogleSignIn = async () => {
     const result = await signIn("google");
