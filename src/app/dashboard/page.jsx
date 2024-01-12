@@ -56,19 +56,19 @@ function Dashboard() {
         />
         <Tab
           icon={<AccountBalanceSharp />}
-          iconPosition="end"
+          iconPosition="start"
           label="Accounts & Balances"
           onClick={() => handleTabClick(1)}
         />
         <Tab
           icon={<PaymentSharp />}
-          iconPosition="end"
+          iconPosition="start"
           label="Paymets"
           onClick={() => handleTabClick(2)}
         />
         <Tab
           icon={<Settings />}
-          iconPosition="end"
+          iconPosition="start"
           label="Settings & Profile"
           onClick={() => handleTabClick(3)}
         />
