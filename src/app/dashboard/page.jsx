@@ -13,11 +13,22 @@ import {
   PaymentSharp,
   Settings,
 } from "@mui/icons-material";
+import Overview from "@/components/Overview";
+import Accounts from "@/components/Accounts";
+import Payments from "@/components/Payments";
+import SettingsComponent from "@/components/Settings";
 
 function Dashboard() {
   const session = useSession();
   const router = useRouter();
   const [value, setValue] = React.useState(0);
+
+  const tabComponents = [
+    <Overview key={0} />,
+    <Accounts key={1} />,
+    <Payments key={2} />,
+    <SettingsComponent key={3} />,
+  ];
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -73,6 +84,7 @@ function Dashboard() {
           onClick={() => handleTabClick(3)}
         />
       </Tabs>
+      {tabComponents[value]}
       <Footer />
     </div>
   );
