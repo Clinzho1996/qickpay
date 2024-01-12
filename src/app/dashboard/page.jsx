@@ -54,6 +54,7 @@ function Dashboard() {
     <div>
       <Navbar />
       <Tabs
+        className="mt-10"
         value={value}
         centered
         onChange={handleChange}
@@ -74,7 +75,7 @@ function Dashboard() {
         <Tab
           icon={<PaymentSharp />}
           iconPosition="start"
-          label="Paymets"
+          label="Payments"
           onClick={() => handleTabClick(2)}
         />
         <Tab
